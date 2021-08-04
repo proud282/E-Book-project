@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap self CSS -->
+    <title>Home</title>
+    <style media="screen">
+      .box1{
+        /* Rectangle 56 */
+        background: rgba(29, 30, 32, 0.7);
+        border-radius: 25px;
+      }
+      .box2{
+        /* Cover Background */
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+
+      }
+      .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 50px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 350px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 25px;
+    width: 25px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+    </style>
+  </head>
+  <body class="bg-white">
+
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background:#1D1E20;">
+      <a class="navbar-brand" href="#"> <img src="img/logo.png" width="45" height="45" alt="">Viben</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+              </ul>
+              <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="home2.html"> <i class='fas fa-home' style="font-size:25px;"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="favorite.html"> <i class='fa fa-heart' style="font-size:25px;"></i> </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="update.html"><i class="far fa-newspaper" style="font-size:25px;"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="dowload.html"> <i class='far fa-caret-square-down' style="font-size:25px;"></i> </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="user.html"> <i class='fa fa-user' style="font-size:25px;color:gray;"></i> </a>
+                </li>
+                <li class="nav-item">
+                  <a href="book_cart.html" class="nav-link"> <i class="fas fa-shopping-cart" style="font-size:25px;color:gray;"></i> </a>
+                </li>
+                <li class="nav-item">
+                  <div class="searchbar">
+                      <input class="search_input" type="text" name="" placeholder="Search...">
+                      <a href="#" class="search_icon nav-link"><i class='fas fa-search' style="font-size:25px;"></i></a>
+                    </div>
+                </li>
+
+
+              </ul>
+      </div>
+    </nav>
+
+        <div class="jumbotron rounded"  style="background:url(img/jum-bg.png);">
+          <div class="col-md-6" >
+              <div class="card flex-md-row mb-4 box-shadow h-md-250" style="background:transparent;">
+                <img class="img-fluid" alt="Thumbnail [200x250]" style="width: 200px; height: 300px;" src="img/book-main.png">
+                <div class="card-body d-flex flex-column align-items-start ">
+                  <div class="box1" style="width:100%;">
+                    <h3 class="mb-0">
+                      <a class="text-white text-center ml-3" href="#">คิมจียอน เกิดปี 82</a>
+                      <p class="text-white text-center"style="font-size:16px;">Cho Nam-Joo</p>
+                    </h3>
+                    <div class="inline text-center">
+                      <p class="inline" style="color:yellow;">5</p>
+                        <i class="fa fa-star" style="color:yellow"></i>
+                        <i class="fa fa-star" style="color:yellow"></i>
+                        <i class="fa fa-star" style="color:yellow"></i>
+                        <i class="fa fa-star" style="color:yellow"></i>
+                        <i class="fa fa-star" style="color:yellow"></i>
+                    </div>
+                  </div>
+                  <a href="favorite.html"> <img src="img/Vector-book.png" alt=""> </a>
+                    <div class="col">
+                      <a href="dowload.html" class="btn btn-light btn-sm" style="border-radius:15px;"><i class="fas fa-plus-circle"></i> save</a>
+                      <a href="book_cart.html" class="btn btn-success btn-sm" style="border-radius:15px;">$57.99</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+      </div>
+      <!-- Modal -->
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+<ol class="carousel-indicators">
+  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <div class="text-center">
+      <a href="book-detail.html"><img src="img/book-collection1.png" width="150" height="200" alt=""></a>
+      <a href="#"><img src="img/book-home2.png" width="150" height="200" alt=""></a></a>
+      <a href="#"><img src="img/book-home3.png" width="150" height="200" alt=""></a></a>
+      <a href="#"><img src="img/book-home4.png" width="150" height="200" alt=""></a></a>
+      <a href="#"><img src="img/book-home5.png" width="150" height="200" alt=""></a></a>
+    </div>
+
+  </div>
+  <div class="carousel-item">
+    <div class="text-center">
+      <a href="#"><img src="img/book-home6.png" width="150" height="200" alt=""></a></a>
+      <a href="#"><img src="img/book-dt3.png" width="150" height="200" alt=""></a></a>
+      <a href="#"><img src="img/book-fav10.png" width="150" height="200" alt=""></a></a>
+      <a href="#"><img src="img/book-fav2.png" width="150" height="200" alt=""></a></a>
+      <a href="#"><img src="img/book-fav4.png" width="150" height="200" alt=""></a></a>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="text-center">
+      <a href="#"><img src="img/book-fav5.png" width="150" height="200" alt=""></a></a>
+      <a href="#"><img src="img/book-fav3.png" width="150" height="200" alt=""></a></a>
+      <a href="#"><img src="img/book-arr3.png" width="150" height="200" alt=""></a></a>
+      <a href="#"><img src="img/book-dt4.png" width="150" height="200" alt=""></a></a>
+      <a href="#"><img src="img/book-save7.png" width="150" height="200" alt=""></a></a>
+    </div>
+  </div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
+        <div class="row mb-2">
+          <div class="col-md-12">
+            <div class="mb-4">
+              <div class="align-items-start">
+                <strong class=" mb-2 text-dark"><h3>Author/Publisher</h3></strong>
+                <div class="inline">
+                  <div class="text-center">
+                  <a href="book-store.html"><img src="img/logo2.png" alt=""></a>
+                    <img src="img/logo1.png" alt="">
+                    <img src="img/logo3.png" alt="">
+                    <img src="img/logo4.png" alt="">
+                    <img src="img/logo5.png" alt="">
+                    <img src="img/logo6.png" alt="">
+                    <img src="img/logo7.png" alt="">
+                  </div>
+
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+
+
+      <div id="bestseller" class="carousel slide" data-ride="carousel" >
+<ol class="carousel-indicators">
+  <li data-target="#bestseller" data-slide-to="0" class="active"></li>
+  <li data-target="#bestseller" data-slide-to="1"></li>
+  <li data-target="#bestseller" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <div class="row box2">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show1.png" class="img-fluid"  style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> The Rithmatist, #1</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">The Rithmatist</a>
+            </h3>
+            <div class="mb-1 text-muted"> Brandon Sanderson</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show1.png" class="img-fluid"   style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> The Rithmatist, #1</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">The Rithmatist</a>
+            </h3>
+            <div class="mb-1 text-muted"> Brandon Sanderson</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show2.png" class="img-fluid"  alt="Thumbnail [200x250]" style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> Season #4</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">เข้าใจ MBA อย่างทะลุปรุโปร่งด้วยภาพ</a>
+            </h3>
+            <div class="mb-1 text-muted">  Jason Barron</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show2.png" class="img-fluid"  alt="Thumbnail [200x250]" style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> Season #4 </strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">เข้าใจ MBA อย่างทะลุปรุโปร่งด้วยภาพ</a>
+            </h3>
+            <div class="mb-1 text-muted">  Jason Barron</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show3.png" class="img-fluid"  alt="Thumbnail [200x250]" style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> พิมพ์ครั้งที่ 3</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">วิธีชนะมิตรและจูงใจคน</a>
+            </h3>
+            <div class="mb-1 text-muted">  Dale Carnegie</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show3.png" class="img-fluid"  alt="Thumbnail [200x250]" style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> พิมพ์ครั้งที่ 3</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">วิธีชนะมิตรและจูงใจคน</a>
+            </h3>
+            <div class="mb-1 text-muted">  Dale Carnegie </div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="carousel-item">
+    <div class="row box2">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show1.png" class="img-fluid"  style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> The Rithmatist, #1</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">The Rithmatist</a>
+            </h3>
+            <div class="mb-1 text-muted"> Brandon Sanderson</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show1.png" class="img-fluid"   style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> The Rithmatist, #1</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">The Rithmatist</a>
+            </h3>
+            <div class="mb-1 text-muted"> Brandon Sanderson</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show2.png" class="img-fluid"  alt="Thumbnail [200x250]" style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> Season #4</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">เข้าใจ MBA อย่างทะลุปรุโปร่งด้วยภาพ</a>
+            </h3>
+            <div class="mb-1 text-muted">  Jason Barron</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show2.png" class="img-fluid"  alt="Thumbnail [200x250]" style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> Season #4 </strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">เข้าใจ MBA อย่างทะลุปรุโปร่งด้วยภาพ</a>
+            </h3>
+            <div class="mb-1 text-muted">  Jason Barron</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show3.png" class="img-fluid"  alt="Thumbnail [200x250]" style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> พิมพ์ครั้งที่ 3</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">วิธีชนะมิตรและจูงใจคน</a>
+            </h3>
+            <div class="mb-1 text-muted">  Dale Carnegie</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show3.png" class="img-fluid"  alt="Thumbnail [200x250]" style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> พิมพ์ครั้งที่ 3</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">วิธีชนะมิตรและจูงใจคน</a>
+            </h3>
+            <div class="mb-1 text-muted">  Dale Carnegie </div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="carousel-item">
+    <div class="row box2">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show1.png" class="img-fluid"  style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> The Rithmatist, #1</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">The Rithmatist</a>
+            </h3>
+            <div class="mb-1 text-muted"> Brandon Sanderson</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show1.png" class="img-fluid"   style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> The Rithmatist, #1</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">The Rithmatist</a>
+            </h3>
+            <div class="mb-1 text-muted"> Brandon Sanderson</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show2.png" class="img-fluid"  alt="Thumbnail [200x250]" style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> Season #4</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">เข้าใจ MBA อย่างทะลุปรุโปร่งด้วยภาพ</a>
+            </h3>
+            <div class="mb-1 text-muted">  Jason Barron</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show2.png" class="img-fluid"  alt="Thumbnail [200x250]" style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> Season #4 </strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">เข้าใจ MBA อย่างทะลุปรุโปร่งด้วยภาพ</a>
+            </h3>
+            <div class="mb-1 text-muted">  Jason Barron</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show3.png" class="img-fluid"  alt="Thumbnail [200x250]" style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> พิมพ์ครั้งที่ 3</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">วิธีชนะมิตรและจูงใจคน</a>
+            </h3>
+            <div class="mb-1 text-muted">  Dale Carnegie</div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <img src="img/book-show3.png" class="img-fluid"  alt="Thumbnail [200x250]" style="width: 200px; height: 250px;">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-muted"> พิมพ์ครั้งที่ 3</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">วิธีชนะมิตรและจูงใจคน</a>
+            </h3>
+            <div class="mb-1 text-muted">  Dale Carnegie </div>
+            <div class="inline text-center">
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                <i class="fa fa-star" style="color:yellow"></i>
+                  <button type="button" class="btn btn-white" name="button">19.99$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<a class="carousel-control-prev" href="#bestseller" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#bestseller" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
+
+
+
+
+    </div><!-- container-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

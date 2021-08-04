@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap self CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.3.1/d3.min.js"></script>
+
+    <title>Cart</title>
+    <style media="screen">
+      .box1{
+        /* Rectangle 56 */
+        background: rgba(29, 30, 32, 0.7);
+        border-radius: 25px;
+      }
+      .box2{
+        /* Cover Background */
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+      }
+      .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+      }
+      .hero-image {
+  background-image: url("img/bg-dt.png");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.searchbar{
+margin-bottom: auto;
+margin-top: auto;
+height: 50px;
+background-color: #353b48;
+border-radius: 30px;
+padding: 10px;
+}
+
+.search_input{
+color: white;
+border: 0;
+outline: 0;
+background: none;
+width: 0;
+caret-color:transparent;
+line-height: 40px;
+transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input{
+padding: 0 10px;
+width: 350px;
+caret-color:red;
+transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+background: white;
+color: #e74c3c;
+}
+
+.search_icon{
+height: 25px;
+width: 25px;
+float: right;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+color:white;
+text-decoration:none;
+}
+.swal-button--confirm {
+  background-color:#4A4A65;
+  color:white;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background:#1D1E20;">
+      <a class="navbar-brand" href="#"> <img src="img/logo.png" width="45" height="45" alt="">Viben</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+              </ul>
+              <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="home2.html"> <i class='fas fa-home' style="font-size:25px;color:gray;"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="favorite.html"> <i class='fa fa-heart' style="font-size:25px;"></i> </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="update.html"><i class="far fa-newspaper" style="font-size:25px;"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="dowload.html"> <i class='far fa-caret-square-down' style="font-size:25px;"></i> </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="user.html"> <i class='fa fa-user' style="font-size:25px;color:gray;"></i> </a>
+                </li>
+                <li class="nav-item">
+                  <a href="book_cart.html" class="nav-link"> <i class="fas fa-shopping-cart" style="font-size:25px;color:white;"></i> </a>
+                </li>
+                <li class="nav-item">
+                  <div class="searchbar">
+                      <input class="search_input" type="text" name="" placeholder="Search...">
+                      <a href="#" class="search_icon nav-link"><i class='fas fa-search' style="font-size:25px;"></i></a>
+                    </div>
+                </li>
+
+              </ul>
+      </div>
+    </nav>
+    <div class="row" style="padding-top:100px;">
+      <div class="col-sm-4">
+
+      </div>
+      <div class="col-sm-4">
+          <h3 style="float: left;"> <a href="book_cart.html" class="text-dark">ตะกร้า</a>  </h3>
+          <h3 style="float: left;"> <a href="" class="text-dark">  >ชำระเงิน</a>  </h3>
+          <h3 style="float: left;"> <a href="" class="text-secondary"> >สั่งซื้อสำเร็จ</a>  </h3>
+
+      </div>
+      <div class="col-sm-4">
+
+      </div>
+    </div>
+    <div class="row pt-5 box2">
+      <div class="col-sm-8 ">
+          <h3>เลือกช่องท่างชำระเงิน</h3>
+          <div class="form-group">
+            <label for="money" class="pt-1">จำนวนเงินที่โอน :</label>
+            <input type="text" class="form-control col-sm-5 ml-2" style="border-radius:20px;" name="money" id="money" value="">
+          </div>
+          <div class="form-group">
+            <label for="date" class="pt-1">วันเวลาที่โอน :</label>
+            <input type="datetime-local" class="form-control col-sm-5 ml-2" style="border-radius:20px;" name="date" id="date" value="">
+          </div>
+          <div class="form-group">
+            <p>File :</p>
+            <div class="custom-file col-sm-5 ml-2">
+              <input type="file" class="custom-file-input " id="customFile">
+              <label class="custom-file-label " for="customFile">Choose file</label>
+            </div>
+          </div>
+
+      </div>
+      <div class="col-sm-4 text-white">
+        <div class="box1 text-dark" style="background:#E7E3E2;">
+          <div class="mr-3 ml-3 pt-3 mb-3">
+
+              <h2>สรุปใบสั่งซื้อ</h2>
+              <p>ยอดรวมสินค้า</p>
+              <h2 class="text-right dt"> 19.20$</h2>
+              <div class="text-center">
+                     <a href="#" id="paid" class="btn btn-success  mb-3" style="background:#4A4A65;">ซื้อสำเร็จ</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <script>
+  // Add the following code if you want the name of the file appear on select
+  $(".custom-file-input").on("change", function() {
+    var fileName = $(this).val().split("\\").pop();
+    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+  });
+  $(document).ready(function(){
+      $("#paid").click(function(){
+        swal({
+          title: "ยืนยันการจ่าย?",
+          text: "กรุณาตรวจสอบความถูกต้อง ?",
+          icon: "warning",
+          buttons: [
+            'ยกเลิก',
+            'ตกลง'
+          ],
+          dangerMode: true,
+        }).then(function(isConfirm) {
+          if (isConfirm) {
+              window.location.href="book_paid_success.html"
+          } else {
+            swal("ยกเลิก !" , "กลับสู่หน้าแก้ไข");
+          }
+        })
+        });
+  });
+  </script>
+
+
+    </div><!-- container-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

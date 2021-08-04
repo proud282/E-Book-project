@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--Icon-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Bootstrap self CSS -->
+  <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+
+  <title>PDF</title>
+  <style media="screen">
+    .box1{
+      /* Rectangle 56 */
+      background: rgba(29, 30, 32, 0.7);
+      border-radius: 25px;
+    }
+    .box2{
+      /* Cover Background */
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px 0px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 22px;
+    }
+    .card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+    }
+    .hero-image {
+background-image: url("img/bg-dt.png");
+background-color: #cccccc;
+height: 500px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+.searchbar{
+margin-bottom: auto;
+margin-top: auto;
+height: 50px;
+background-color: #353b48;
+border-radius: 30px;
+padding: 10px;
+}
+
+.search_input{
+color: white;
+border: 0;
+outline: 0;
+background: none;
+width: 0;
+caret-color:transparent;
+line-height: 40px;
+transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input{
+padding: 0 10px;
+width: 350px;
+caret-color:red;
+transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+background: white;
+color: #e74c3c;
+}
+
+.search_icon{
+height: 25px;
+width: 25px;
+float: right;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+color:white;
+text-decoration:none;
+}
+  </style>
+  <script src="src/build/pdf.js"></script>
+  <script src="simple.js"></script>
+</head>
+  <body class="bg-secondary">
+    <a href="src/web/viewer.html?file=pdf/test.pdf" class="text-white pt-5">Open Full Screen PDF.js Viewer</a>
+
+    <iframe src="src/web/viewer.html?file=pdf/test.pdf" style="height:100%;width: 100%;" />
+  </body>
+</html>
